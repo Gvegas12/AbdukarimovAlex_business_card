@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    color: white;
+    text-align: center;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+
+    @media (max-width: 540px) {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .description {
+    font-size: 300;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+
+  height: 50vh;
+  background-color: black;
+}

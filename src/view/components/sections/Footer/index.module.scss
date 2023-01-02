@@ -1,0 +1,48 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 120px;
+  @media (max-width: 540px) {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  & > :first-child {
+    @media (max-width: 540px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  & > *,
+  .footerNavLink {
+    color: var(--main--color-gray);
+    font-size: 0.8rem;
+    @media (max-width: 540px) {
+      font-size: 0.6rem;
+    }
+  }
+
+  .footerNavList {
+    display: flex;
+    @media (max-width: 540px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .footerNavItem {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      .footerNavLink {
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  background: black;
+}
