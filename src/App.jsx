@@ -6,6 +6,7 @@ import FFour from "./view/components/projects/FFour";
 import FFive from "./view/components/projects/FFive";
 import Action from "./view/components/sections/Action";
 import Footer from "./view/components/sections/Footer";
+import React from "react";
 
 function App() {
   return (
